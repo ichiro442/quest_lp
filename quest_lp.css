@@ -53,6 +53,7 @@ nav{
 }
 .nav_img{
   width: 20%;
+  margin-left: 1rem;
 }
 .nav_title{
   color: #ad6fbf !important;
