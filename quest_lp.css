@@ -19,7 +19,6 @@ h1 {
 }
 h2 {
   color: #ad6fbf;
-  /* border-bottom: solid 5px red; */
   text-shadow: -3px 2px #d2ae2c;
   font-size: 3rem;
   margin-top: 5rem;
@@ -38,6 +37,57 @@ a {
 .main_color {
   color: #ad6fbf;
   text-shadow: -3px 2px #d2ae2c;
+}
+/*下からフェードイン*/
+ .fade-in-bottom {
+  animation: fadein-bottom 4.1s;
+}
+@keyframes fadein-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 
+/* フェードイン 左から右へ */
+.fade-in-left {
+  animation: fadein-left 4.1s;
+}
+@keyframes fadein-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+} 
+
+/* フェードイン 下から上 js */
+.fadein {
+  opacity: 0;
+  transform: translate(0, 50px);
+  transition: all 4.1s;
+}
+
+.fadein.scrollin {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+/* フェードイン h左から右へ js */
+.fadein_left {
+  opacity: 0;
+  transform: translate(-200px);
+  transition: all 2.5s;
+}
+
+.fadein_left.scrollin {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 /* header */
@@ -104,10 +154,26 @@ main {
   margin-top: 2rem;
   height: 22rem;
 }
+.title1_contents {
+  width: 100%;
+  height: 100%;
+}
+.title1_content {
+  width: 50%;
+  height: 100%;
+  justify-content: flex-start;
+}
 .title1_box p {
-  margin-top: 2rem;
   color: #ad6fbf;
-  line-height: 2rem;
+  line-height: 3rem;
+}
+.title1_imgs {
+  width: 50%;
+  height: 100%;
+}
+.title1_img {
+  width: 100%;
+  height: 100%;
 }
 .imgs {
   width: 100%;
