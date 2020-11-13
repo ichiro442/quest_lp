@@ -78,10 +78,10 @@ a {
   opacity: 1;
   transform: translate(0, 0);
 }
-/* フェードイン h左から右へ js */
+/* フェードイン 左から右へ js */
 .fadein_left {
   opacity: 0;
-  transform: translate(-200px);
+  transform: translate(-300px);
   transition: all 2.5s;
 }
 
